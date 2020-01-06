@@ -1,0 +1,139 @@
+body {
+    font-family: 'Kalam', cursive;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    height: 86px;
+    line-height: 47px;
+}
+
+
+.title {
+    position: absolute;
+    left: 23px;
+    top: 29px;
+    font-size: 34px;
+    color: rgb(89, 131, 21);
+}
+
+.header {
+    display: flex;
+    float: right;
+    padding-right: 71px;
+}
+
+.header-list {
+    list-style: none;
+    margin-left: 74px;
+    font-size: 19px;
+}
+
+.home {
+    background-image: url(https://image.freepik.com/vector-gratis/programador-trabajando-estilo-isometrico_52683-16729.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 54px;
+}
+
+.title-home {
+    font-size: 58px;
+    padding-left: 105px;
+    width: 367px;
+}
+
+.title-home + p {
+    font-size: 22px;
+    padding-left: 170px;
+    width: 403px;
+}
+
+.about {
+    display: flex;
+    margin: 120px 32px;
+}
+
+#about {
+    padding-left: 164px;
+    width: 460px;
+}
+
+.about > img {
+    width: 611px;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    top: 320px;
+    position: relative;
+}
+
+.dot-one span, .dot-two span {
+    width: 15px;
+    background-color:black;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.dot-two:hover .test-two {
+    display: block;
+}
+.testimonials img {
+    width: 201px;
+    border-radius: 100%;
+}
+
+.test-one, .test-two {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.test-two {
+    left: 1356px;
+}
+
+.test-one p, .test-two p {
+    width: 37%;
+}
+
+.dot-two:hover ~ .text-two {
+    transform: translateX(0px);
+}
+
+
+
+.blog {
+    margin-top: 344px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 41px;
+}
+
+#blog {
+    display: flex;
+    margin: 81px 47px;
+}
+
+.blog img {
+    width: 81%;
+}
+
+#blog p {
+    width: 79%;
+}
