@@ -1,5 +1,5 @@
 body {
-    font-family: 'Kalam', cursive;
+    font-family: Poppins,sans-serif;
 }
 
 header {
@@ -9,6 +9,8 @@ header {
     top: 0;
     height: 86px;
     line-height: 47px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.2);
+    z-index: 10;
 }
 
 
@@ -30,69 +32,101 @@ header {
     list-style: none;
     margin-left: 74px;
     font-size: 19px;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none;
+    color:#001858;
+}
+
+.header-list:hover {
+    transform:rotateX(320deg);
+    color:rgb(87, 84, 84);
 }
 
 .home {
-    background-image: url(https://image.freepik.com/vector-gratis/programador-trabajando-estilo-isometrico_52683-16729.jpg);
-    background-size: cover;
-    background-attachment: fixed;
     margin-top: 54px;
+    margin-bottom: 0px;
+    padding-bottom: 48px;
+    background-color: #f3d2c1;
+    position: relative;
+    display: flex;
+    
+}
+
+.home > img {
+    opacity: 49%;
 }
 
 .title-home {
     font-size: 58px;
-    padding-left: 105px;
+    padding-left: 167px;
     width: 367px;
+    margin-bottom: 208px;
+    font-weight: 701;
 }
 
 .title-home + p {
     font-size: 22px;
-    padding-left: 170px;
-    width: 403px;
+    padding-left: 108px;
+    width: 270px;
+    position:absolute;
+    bottom: 0px;
+    padding-bottom: 27px;
 }
 
 .about {
     display: flex;
-    margin: 120px 32px;
+    padding-top: 86px;
+    
 }
 
 #about {
-    padding-left: 164px;
+    padding-left: 137px;
     width: 460px;
+    position: relative;
 }
 
 .about > img {
     width: 611px;
+    padding-left: 19px;
+}
+
+.about h3 {
+    color:#001858
+}
+
+.about p {
+    color:#f582ae;
+}
+
+#about img {
+    position:absolute;
+    width: 12%;
+    left: 34px;
+    transition: 1s;
+}
+
+.about-one,.about-two,.about-three {
+    padding-bottom: 10px;
+}
+
+#about img:hover {
+    transform: skew(-35deg);
 }
 
 .testimonials {
     display: flex;
-    flex-direction: column;
     position: relative;
-}
-
-.dots {
-    display: flex;
     justify-content: center;
-    top: 320px;
-    position: relative;
+    padding-top: 80px;
 }
 
-.dot-one span, .dot-two span {
-    width: 15px;
-    background-color:black;
-    height: 15px;
-    display: inline-block;
-    border-radius: 50%;
-    margin: 10px;
-}
-
-.dot-two:hover .test-two {
-    display: block;
-}
-.testimonials img {
-    width: 201px;
-    border-radius: 100%;
+.testimonials > span {
+    font-size: 45px;
+    position: absolute;
+    color:#001858;
 }
 
 .test-one, .test-two {
@@ -100,29 +134,83 @@ header {
     display: flex;
     flex-direction: column;
     position: absolute;
+    padding-top: 121px;
+    transition: .5s;
+}
+
+.test-one {
+    right: 0px;
 }
 
 .test-two {
-    left: 1356px;
+    transform: translateX(923px);
 }
+
 
 .test-one p, .test-two p {
     width: 37%;
+    color: #172c66;
 }
 
-.dot-two:hover ~ .text-two {
+.test-one p ~ span, .test-two p ~ span {
+    color:#001858;
+}
+
+.testimonials img {
+    border-radius: 100%;
+}
+
+.test-one > img {
+    width: 201px;
+}
+
+.test-two > img {
+    width: 198px;
+    height: 160px;
+}
+
+.dot-one, .dot-two {
+    display: flex;
+    justify-content: center;
+    top: 430px;
+    position: relative;
+}
+
+.dot-one span, .dot-two span {
+    width: 15px;
+    background-color:#f582ae;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+.dot-two:hover ~ .test-two {
     transform: translateX(0px);
 }
 
+.dot-two:hover + .test-one {
+    transform: translateX(-922px);
+}
 
+.dot-one:hover span {
+    background-color: crimson;
+}
+
+.dot-two:hover span {
+    background-color: crimson;
+}
 
 .blog {
-    margin-top: 344px;
+    margin-top: 417px;
+    padding-top: 80px;
 }
 
 h2 {
     text-align: center;
     font-size: 41px;
+    color:#001858;
 }
 
 #blog {
@@ -132,8 +220,45 @@ h2 {
 
 .blog img {
     width: 81%;
+    transition: .2s;
+    padding-bottom: 10px;
 }
 
 #blog p {
     width: 79%;
+}
+
+.blog img:hover {
+    transform: scale(1.3);
+}
+
+
+.contact {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 71px;
+}
+
+.contact > span {
+    text-align: center;
+    font-size: 41px;
+    color:#001858;
+}
+
+form {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 42px;
+    font-family: Poppins,sans-serif;
+}
+
+input {
+    border-radius: 5px;
+    padding: 6px 10px;
+    margin: 6px;
+}
+
+input:hover {
+    border: 1px solid rgba(104, 104, 243, 0.973);
 }
