@@ -41,18 +41,25 @@ a {
 }
 
 .header-list:hover {
-    transform:rotateX(320deg);
-    color:rgb(87, 84, 84);
+    transform:rotateX(344deg);
+    color:#f582ae;
+    text-decoration: underline;
 }
 
 .home {
     margin-top: 54px;
     margin-bottom: 0px;
     padding-bottom: 48px;
-    background-color: #f3d2c1;
     position: relative;
     display: flex;
-    
+}
+
+.back {
+    -moz-transform: skew(0deg, -10deg);
+    background-color: #f3d2c1;
+    width: 100%;
+    height: 494px;
+    position: absolute;
 }
 
 .home > img {
@@ -62,7 +69,7 @@ a {
 .title-home {
     font-size: 58px;
     padding-left: 167px;
-    width: 367px;
+    width: 28%;
     margin-bottom: 208px;
     font-weight: 701;
 }
@@ -261,4 +268,83 @@ input {
 
 input:hover {
     border: 1px solid rgba(104, 104, 243, 0.973);
+}
+
+@media (max-width:1200px) {
+    .about > img {
+        display:none;
+    }
+    .title-home {
+        padding-left: 0px;
+    }
+}
+@media (max-width:1116px) {
+    .home > img {
+        height: 40%;
+        width: 40%;
+    }
+    .title-home {
+        font-size: 52px;
+    }
+    .title-home + p {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width:1000px) {
+    .header-list {
+        font-size:17px;
+    }
+    .title {
+        font-size:22px;
+    }
+}
+@media (max-width:881px) {
+    .title-home {
+        font-size: 40px;
+    }
+    .title-home + p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:781px) {
+    .header-list {
+        margin-left: 42px;
+    }
+    .home > img {
+        display: none;
+    }
+    .title-home {
+        font-size: 39px;
+    }
+    .title-home + p {
+        display:none;
+    }
+    .home {
+        padding-bottom: 0px;
+    }
+    .testimonials {
+        display: none;
+    }
+    .blog {
+        margin-top: 0px;
+    }
+    #blog p {
+        display:none;
+    }
+}
+
+@media (max-width:619px) {
+    header {
+        height: 237px;
+        position: static;
+    }
+    .header {
+        flex-direction: column;
+        float: left;
+    }
+    .header-list {
+        margin-left: 74px;
+    }
 }
